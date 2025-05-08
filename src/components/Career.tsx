@@ -15,37 +15,26 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Software Engineer</h4>
-                <h5>DXC Technology</h5>
+                <h4>Full Stack Developer</h4>
+                <h5>Zelle</h5>
               </div>
-              <h3>2021</h3>
+              <h6>Sep 2024 – Present</h6>
             </div>
             <p>
-            I gained hands-on experience with AWS and Azure, supporting cloud migrations, big data storage, and backend management for insurance systems while collaborating in Agile environments and enhancing production support workflows.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Associate Software Engineer</h4>
-                <h5>DXC Technology</h5>
-              </div>
-              <h3>2023</h3>
-            </div>
-            <p>
-            I enhanced system reliability on IBM iSeries through debugging, SQL optimization, and scripting, while designing secure APIs and microservices, automating cloud deployments with AWS and Azure, deploying Dockerized microservices on Kubernetes, and enhancing API security, which earned me the DXC Champ Award for contributions to system reliability and automation.
-            </p>
+            Worked on the Instant Payment Request System, reducing delivery time by 30% through collaboration with cross-functional teams. Developed React frontends with Redux for real-time status tracking, increasing user interaction by 25%.
+            Optimized PostgreSQL databases on AWS, improving query performance by 40% and cutting unauthorized access by 50%. Built secure Spring Boot APIs with AWS AppSync and SNS for real-time sync, reducing transaction time by 20%.
+            Achieved 95% test coverage, integrated into AWS CodePipeline, and sped up development cycles by 35%. Deployed on AWS with auto-scaling and load balancing, ensuring 99.9% uptime and reducing deployment time by 50%.            </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
                 <h4>Full Stack Developer</h4>
-                <h5>Citizens Bank</h5>
+                <h5>CRISIL Ltd</h5>
               </div>
-              <h3>NOW</h3>
+              <h6>Aug 2020 – Jul 2023</h6>
             </div>
             <p>
-            Collaborated with cross-functional teams to develop a frontend using React and advanced state management, designed secure data architectures with PostgreSQL and AWS, built the backend with FastAPI, implemented CI/CD pipelines, and deployed the application on AWS, ensuring high performance and security
+            Built a real-time Client Portfolio Management System from the ground up. Worked on React + Redux frontends with live updates via WebSockets, increasing user engagement by 40%. Developed Django REST APIs with async processing to cut response times by 35%. Designed and optimized PostgreSQL on Azure to handle millions of transactions, reducing query time by 45%. Secured the app with JWT, AES encryption, and role-based access. Achieved 95% test coverage and automated CI/CD with Azure DevOps, cutting manual QA by 60% and ensuring 99.9% uptime.
             </p>
           </div>
         </div>
