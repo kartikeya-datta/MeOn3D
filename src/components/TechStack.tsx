@@ -12,6 +12,7 @@ import {
 } from "@react-three/rapier";
 
 const textureLoader = new THREE.TextureLoader();
+// Removed duplicates from the image URLs array
 const imageUrls = [
   "/images/react2.webp",
   "/images/next2.webp",
@@ -25,13 +26,32 @@ const imageUrls = [
   "/images/Django.webp",
   "/images/Java.webp",
   "/images/AWS.webp",
+  "/images/swift.png",
+  "/images/bash.png",
+  "/images/hadoop.png",
+  "/images/kafka.png",
+  "/images/azure.png",
+  "/images/pyspark.png",
+  "/images/git.png",
+  "/images/docker.png",
+  "/images/jupiter.png",
+  "/images/tensorflow.png",
+  "/images/pytorch.png",
+  "/images/tableau.png",
+  "/images/matlab.png",
 ];
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
 
-const spheres = [...Array(30)].map(() => ({
-  scale: [0.7, 1, 0.8, 1, 1][Math.floor(Math.random() * 5)],
+// Define specific scales for each technology
+// We'll use 5 different sizes but with a higher minimum size for better visibility
+const sizeCategories = [0.7, 0.8, 0.9, 1.0, 1.1];
+
+// Create an array of spheres with one for each technology
+const spheres = textures.map((_, index) => ({
+  scale: sizeCategories[index % sizeCategories.length],
+  textureIndex: index, // Store the index to ensure each sphere gets a unique texture
 }));
 
 type SphereProps = {
@@ -155,6 +175,7 @@ const TechStack = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  
   const materials = useMemo(() => {
     return textures.map(
       (texture) =>
@@ -172,7 +193,7 @@ const TechStack = () => {
 
   return (
     <div className="techstack">
-      <h2> My Techstack</h2>
+      <h2>My Techstack</h2>
 
       <Canvas
         shadows
@@ -197,7 +218,7 @@ const TechStack = () => {
             <SphereGeo
               key={i}
               {...props}
-              material={materials[Math.floor(Math.random() * materials.length)]}
+              material={materials[props.textureIndex]} // Use the specific texture for this sphere
               isActive={isActive}
             />
           ))}
