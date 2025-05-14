@@ -26,7 +26,7 @@ const workItems = [
     title: "MyPortfolio",
     subtitle: "Boostrap Portfolio",
     tools: "HTML, CSS, JavaScript, Bootstrap",
-    image: "/images/Portfolio1.png",
+    image: "/images/portfolio.png",
     Link: "https://cyecharla.github.io/ChalamYecharla.github.io/",
   },
   {
